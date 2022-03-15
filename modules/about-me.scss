@@ -1,0 +1,40 @@
+@use "./../partials/palette";
+@use "./../mixins.scss";
+
+.about-me {
+  @include mixins.section-position;
+
+  &__white {
+    background-color: white;
+    border-radius: 0 50px;
+    padding: 20px 20px 10px 20px;
+  
+      &--link {
+        text-decoration: none;
+        color: palette.$maroon-dark;
+        font-weight: bold;
+        &:hover {
+          color: palette.$color-sand;
+        }
+      }
+  }
+}
+
+.my-skills {
+  @include mixins.section-position;
+
+  p {
+    color: palette.$maroon-dark;
+  }
+
+  &__container {
+    margin:20px 0 0 0;
+    padding:0
+  }
+}
+.progress {
+  margin-bottom: 20px;
+}
+.progress-bar{
+  background-color: palette.$color-sand;
+}

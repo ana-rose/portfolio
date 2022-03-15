@@ -1,0 +1,44 @@
+@use "./partials/palette";
+
+
+$sm:540px;
+$md: 768px;
+$lg: 1024px;
+
+@mixin phone {
+  @media only screen and (max-width:$sm) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media only screen and (min-width: ($sm + 1px)) and (max-width: $md) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media only screen and (min-width: ($md + 1px)) {
+    @content;
+  }
+}
+
+
+@mixin menuItem {
+  text-decoration: none;
+  padding: 0 30px;
+  margin: 0;
+}
+@mixin flex (
+  $just-cont: center,
+  $align-itm: center,
+  $flx-dir: row,
+  $flx-wrp: nowrap
+) {
+  display: flex;
+  justify-content: $just-cont;
+  align-items: $align-itm;
+  flex-direction: $flx-dir;
+  flex-wrap: $flx-wrp;
+}
+@mixin section-position {
+  margin:70px 30px 30px 30px;
+}
