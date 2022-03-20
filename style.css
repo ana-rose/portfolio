@@ -8,12 +8,11 @@
 }
 .intro__text {
   padding: 40px;
-  margin: 0;
+  margin: 20px 0 0 0;
 }
 .intro__text--name, .contact__content-block--title {
   font-weight: bold;
   font-size: 34px;
-  margin: 0px;
   color: #904549;
 }
 .intro__text--last-name {
@@ -264,14 +263,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 @media only screen and (min-width: 769px) {
   .page-part {
-    height: calc(100vh - 75px);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 

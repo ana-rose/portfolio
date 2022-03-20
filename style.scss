@@ -18,16 +18,12 @@ body {
 }
 #partIntro {
     height: calc(100vh - 75px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include mixins.flex;
 }
 .page-part {
     @include mixins.laptop {
-        height: calc(100vh - 75px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 100vh;
+        @include mixins.flex;
     }
 }
 #partSkills,

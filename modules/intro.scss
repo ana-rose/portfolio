@@ -7,12 +7,11 @@
 
     &__text {
         padding: 40px;
-        margin: 0;
+        margin: 20px 0 0 0;
 
         &--name {
             font-weight: bold;
             font-size: 34px;
-            margin: 0px;
             color: palette.$maroon-light;
         }
         &--last-name {
