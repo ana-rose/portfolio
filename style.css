@@ -1,5 +1,5 @@
 .intro {
-  margin: 30px 30px 0 30px;
+  margin-left: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,7 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: 0 30px 0 30px;
+    margin: 30px 30px 0 30px;
   }
   .intro__img {
     width: 60vw;
@@ -47,7 +47,7 @@
 }
 
 .about-me {
-  margin: 70px 30px 30px 30px;
+  margin: 100px 30px 30px 30px;
 }
 .about-me__white, .my-projects__white {
   background-color: white;
@@ -64,7 +64,12 @@
 }
 
 .my-skills {
-  margin: 70px 30px 30px 30px;
+  margin: 100px 30px 30px 30px;
+}
+@media only screen and (min-width: 769px) {
+  .my-skills {
+    padding-top: 120px;
+  }
 }
 .my-skills p {
   color: #590232;
@@ -140,7 +145,12 @@
 }
 
 .my-projects {
-  margin: 70px 30px 30px 30px;
+  margin: 100px 30px 30px 30px;
+}
+@media only screen and (min-width: 769px) {
+  .my-projects {
+    padding-top: 90px;
+  }
 }
 .my-projects__text {
   padding: 30px;
@@ -180,8 +190,13 @@
 }
 
 .contact {
-  margin: 70px 30px 30px 30px;
+  margin: 100px 30px 30px 30px;
   margin-bottom: 60px;
+}
+@media only screen and (min-width: 769px) {
+  .contact {
+    padding-top: 120px;
+  }
 }
 .contact__content-block {
   display: flex;
@@ -242,6 +257,31 @@ html {
 body {
   margin: 0;
   background-color: #f2f2f2;
+}
+
+#partIntro {
+  height: calc(100vh - 75px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 769px) {
+  .page-part {
+    height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #partSkills,
+#partProjects,
+#partContact {
+    height: 100vh;
+    display: block;
+  }
 }
 
 .pre-title {

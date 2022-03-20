@@ -4,37 +4,40 @@
 @use "./navigation.scss";
 
 .my-projects {
-  @include mixins.section-position;
-
-  &__text {
-      padding:30px;
-
-    &--project-name{
-      font-weight: bold;
-      color: palette.$maroon-dark;
-      font-size: 20px;
+    @include mixins.laptop {
+        padding-top: 90px;
     }
-    &--technologies {
-      color: palette.$maroon-light;
+    @include mixins.section-position;
+
+    &__text {
+        padding: 30px;
+
+        &--project-name {
+            font-weight: bold;
+            color: palette.$maroon-dark;
+            font-size: 20px;
+        }
+        &--technologies {
+            color: palette.$maroon-light;
+        }
+        &--link {
+            color: palette.$maroon-dark;
+            font-size: 24px;
+            margin: 5px;
+
+            &:hover {
+                color: palette.$color-sand;
+            }
+        }
     }
-    &--link {
-      color: palette.$maroon-dark;
-      font-size: 24px;
-      margin: 5px;
 
-      &:hover {
-        color: palette.$color-sand;
-      }
-    } 
-  }
+    &__white {
+        padding: 30px;
+        @extend .about-me__white;
+        @include mixins.flex($just-cont: space-evenly);
 
-  &__white {
-    padding:30px;
-    @extend .about-me__white;
-    @include mixins.flex ($just-cont: space-evenly);
-
-    @include mixins.phone {
-      @include mixins.flex ($flx-dir: column);
+        @include mixins.phone {
+            @include mixins.flex($flx-dir: column);
+        }
     }
-  }
 }

@@ -2,44 +2,43 @@
 @use "./../mixins.scss";
 
 .intro {
-  margin: 30px 30px 0 30px;
-  @include mixins.flex;
-    
-    &__text {
-      padding: 40px;
-      margin: 0;
+    margin-left: 30px;
+    @include mixins.flex;
 
-      &--name {
-        font-weight: bold;
-        font-size: 34px;
-        margin:0px;
-        color: palette.$maroon-light;
-      }
-      &--last-name {
-        color: palette.$maroon-dark;
-      }
-      &--highlighted-text {
-        font-weight: bold;
-        color: palette.$maroon-light;
-      }
+    &__text {
+        padding: 40px;
+        margin: 0;
+
+        &--name {
+            font-weight: bold;
+            font-size: 34px;
+            margin: 0px;
+            color: palette.$maroon-light;
+        }
+        &--last-name {
+            color: palette.$maroon-dark;
+        }
+        &--highlighted-text {
+            font-weight: bold;
+            color: palette.$maroon-light;
+        }
     }
     &__img {
-      border: 20px solid white;
-      border-radius: 180px;
-      box-shadow: 10px 0px palette.$color-sand;
+        border: 20px solid white;
+        border-radius: 180px;
+        box-shadow: 10px 0px palette.$color-sand;
     }
-  
+
     @include mixins.phone {
+        @include mixins.flex($flx-dir: column);
+        margin: 30px 30px 0 30px;
 
-      @include mixins.flex ($flx-dir: column);
-      margin: 0 30px 0 30px;
-
-      &__img {
-        width: 60vw;
-        height:auto;
-      }
-      &__text {
-        padding:0px;
-      }
+        &__img {
+            width: 60vw;
+            height: auto;
+        }
+        &__text {
+            padding: 0px;
+        }
     }
-  }
+}

@@ -4,53 +4,56 @@
 @use "./about-me.scss";
 
 .contact {
-  @include mixins.section-position;
-  margin-bottom: 60px;
-
-  &__content-block {
-    @include mixins.flex ($just-cont:space-evenly);
-
-    @include mixins.phone {
-      @include mixins.flex($flx-dir:column, $just-cont: flex-start);
+    @include mixins.laptop {
+        padding-top: 120px;
     }
+    @include mixins.section-position;
+    margin-bottom: 60px;
 
-    &--img {
-     font-size: 150px;
-     color: palette.$color-sand;
+    &__content-block {
+        @include mixins.flex($just-cont: space-evenly);
 
-     @include mixins.phone {
-      font-size: 80px;
-    }
+        @include mixins.phone {
+            @include mixins.flex($flx-dir: column, $just-cont: flex-start);
+        }
 
-     &:hover {
-       color: palette.$maroon-light;
-       cursor:pointer;
-     }
-    }
-    &--text {
-      padding-left: 40px;
-      margin: 0;
+        &--img {
+            font-size: 150px;
+            color: palette.$color-sand;
 
-      @include mixins.phone {
-        padding:30px 0 0 0;
-      }
-    }
-    &--title {
-      @extend .intro__text--name;
-      padding-bottom: 10px;
-      font-size: 30px;
-    }
-    &--link{
-      @extend .about-me__white--link;
-    }
-    &--link-socials {
-      color: palette.$maroon-dark;
-      font-size: 30px;
-      margin-right: 20px;
+            @include mixins.phone {
+                font-size: 80px;
+            }
 
-      &:hover {
-        @extend .about-me__white--link;
-      }
+            &:hover {
+                color: palette.$maroon-light;
+                cursor: pointer;
+            }
+        }
+        &--text {
+            padding-left: 40px;
+            margin: 0;
+
+            @include mixins.phone {
+                padding: 30px 0 0 0;
+            }
+        }
+        &--title {
+            @extend .intro__text--name;
+            padding-bottom: 10px;
+            font-size: 30px;
+        }
+        &--link {
+            @extend .about-me__white--link;
+        }
+        &--link-socials {
+            color: palette.$maroon-dark;
+            font-size: 30px;
+            margin-right: 20px;
+
+            &:hover {
+                @extend .about-me__white--link;
+            }
+        }
     }
-  } 
 }

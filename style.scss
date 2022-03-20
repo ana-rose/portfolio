@@ -6,40 +6,58 @@
 @use "./modules/contact.scss";
 @use "./modules/navigation.scss";
 * {
-  font-family: 'Raleway', sans-serif;
-  line-height: 1.8;
-  }
+    font-family: "Raleway", sans-serif;
+    line-height: 1.8;
+}
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 body {
-  margin:0;
-  background-color: palette.$color-light;
+    margin: 0;
+    background-color: palette.$color-light;
 }
-.pre-title{
-  font-size: 14px;
-  padding:0;
-  margin:0;
+#partIntro {
+    height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-part {
+    @include mixins.laptop {
+        height: calc(100vh - 75px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+#partSkills,
+#partProjects,
+#partContact {
+    @include mixins.laptop {
+        height: calc(100vh);
+        display: block;
+    }
+}
+
+.pre-title {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
 }
 .section-title {
-  padding:0;
-  font-size: 24px;
-  color: palette.$maroon-light;
-  margin:0 0 10px 0;
+    padding: 0;
+    font-size: 24px;
+    color: palette.$maroon-light;
+    margin: 0 0 10px 0;
 }
 .footer {
-  background-color: palette.$maroon-light;
-  color: palette.$color-light;
-  text-align: center;
-  padding: 30px;
+    background-color: palette.$maroon-light;
+    color: palette.$color-light;
+    text-align: center;
+    padding: 30px;
 
-  &__text {
-    padding: 0;
-    margin:0;
-  }
+    &__text {
+        padding: 0;
+        margin: 0;
+    }
 }
-
-
-
-
-
