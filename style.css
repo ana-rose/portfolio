@@ -65,17 +65,13 @@
 .my-skills {
   margin: 100px 30px 30px 30px;
 }
-@media only screen and (min-width: 769px) {
-  .my-skills {
-    padding-top: 120px;
-  }
-}
 .my-skills p {
   color: #590232;
 }
 .my-skills__container {
-  margin: 20px 0 0 0;
   padding: 0;
+  margin: 0;
+  width: 80vw;
 }
 
 .progress {
@@ -93,7 +89,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  background-color: rgba(242, 242, 242, 0.8);
+  background-color: #f2f2f2;
 }
 
 .navbar {
@@ -146,11 +142,6 @@
 .my-projects {
   margin: 100px 30px 30px 30px;
 }
-@media only screen and (min-width: 769px) {
-  .my-projects {
-    padding-top: 90px;
-  }
-}
 .my-projects__text {
   padding: 30px;
 }
@@ -191,11 +182,6 @@
 .contact {
   margin: 100px 30px 30px 30px;
   margin-bottom: 60px;
-}
-@media only screen and (min-width: 769px) {
-  .contact {
-    padding-top: 120px;
-  }
 }
 .contact__content-block {
   display: flex;
@@ -295,7 +281,11 @@ body::-webkit-scrollbar-thumb {
 #partProjects,
 #partContact {
     height: 100vh;
-    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -316,7 +306,8 @@ body::-webkit-scrollbar-thumb {
   background-color: #904549;
   color: #f2f2f2;
   text-align: center;
-  padding: 30px;
+  padding: 20px;
+  width: 99vw;
 }
 .footer__text {
   padding: 0;

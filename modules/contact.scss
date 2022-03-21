@@ -5,7 +5,7 @@
 
 .contact {
     @include mixins.laptop {
-        padding-top: 120px;
+        // padding-top: 120px;
     }
     @include mixins.section-position;
     margin-bottom: 60px;

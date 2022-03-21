@@ -40,7 +40,11 @@ body::-webkit-scrollbar-thumb {
 #partContact {
     @include mixins.laptop {
         height: calc(100vh);
-        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -59,7 +63,8 @@ body::-webkit-scrollbar-thumb {
     background-color: palette.$maroon-light;
     color: palette.$color-light;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
+    width: 99vw;
 
     &__text {
         padding: 0;

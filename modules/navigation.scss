@@ -2,46 +2,46 @@
 @use "./../mixins.scss";
 
 #navContainer {
-  margin:0;
-  height: 75px;
-  width: 100%;
-  position: sticky;
-  top: 0;
-  left:0;
-  background-color: rgb(242, 242, 242, 0.8);
+    margin: 0;
+    height: 75px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgb(242, 242, 242, 1);
 }
 .navbar {
-  @include mixins.flex ($just-cont: space-between, $align-itm: center);
-  margin: 0px 30px 0px 30px;
+    @include mixins.flex($just-cont: space-between, $align-itm: center);
+    margin: 0px 30px 0px 30px;
 
     &__menu--item {
-      @include mixins.menuItem;
-      color: palette.$maroon-dark;
-      font-size: 18px;
-      &:hover{
-        font-weight:bold;
+        @include mixins.menuItem;
         color: palette.$maroon-dark;
-      }
+        font-size: 18px;
+        &:hover {
+            font-weight: bold;
+            color: palette.$maroon-dark;
+        }
     }
     &__logo {
-      @include mixins.menuItem;
-      color: palette.$maroon-light;
-      font-size: 40px;
-      font-weight: bold;
-      &:hover{
-        color: palette.$color-sand;
-      }
+        @include mixins.menuItem;
+        color: palette.$maroon-light;
+        font-size: 40px;
+        font-weight: bold;
+        &:hover {
+            color: palette.$color-sand;
+        }
     }
 
-  @include mixins.phone {
-    @include mixins.flex ($flx-dir: column, $align-itm:flex-start);
-    margin-left: 0;
+    @include mixins.phone {
+        @include mixins.flex($flx-dir: column, $align-itm: flex-start);
+        margin-left: 0;
 
-    &__menu {
-      margin-top: 20px;
-      &--item {
-        display: none;
-      }
+        &__menu {
+            margin-top: 20px;
+            &--item {
+                display: none;
+            }
+        }
     }
-  }
 }

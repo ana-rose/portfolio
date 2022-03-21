@@ -22,7 +22,6 @@
 
 .my-skills {
     @include mixins.laptop {
-        padding-top: 120px;
     }
     @include mixins.section-position;
 
@@ -31,8 +30,9 @@
     }
 
     &__container {
-        margin: 20px 0 0 0;
         padding: 0;
+        margin: 0;
+        width: 80vw;
     }
 }
 

@@ -5,7 +5,7 @@
 
 .my-projects {
     @include mixins.laptop {
-        padding-top: 90px;
+        // padding-top: 90px;
     }
     @include mixins.section-position;
 
