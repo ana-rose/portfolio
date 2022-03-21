@@ -16,6 +16,15 @@ body {
     margin: 0;
     background-color: palette.$color-light;
 }
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-track {
+    background: palette.$color-sand;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: palette.$maroon-light;
+}
 #partIntro {
     height: calc(100vh - 75px);
     @include mixins.flex;

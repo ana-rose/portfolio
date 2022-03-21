@@ -258,6 +258,18 @@ body {
   background-color: #f2f2f2;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #d9c3b0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #904549;
+}
+
 #partIntro {
   height: calc(100vh - 75px);
   display: flex;
