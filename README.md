@@ -1,6 +1,7 @@
 # Ana Rose portfolio
 
 A single-page, fully responsive personal portfolio.
+
 ![image](https://user-images.githubusercontent.com/100544932/159830490-b092dc0e-746b-44a1-b9f2-84d3b65729b4.png)
 
 # Link:
