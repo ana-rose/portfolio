@@ -13,3 +13,8 @@ My goal is to make the design clean, sleek and engaging, and at the same time to
 
 # Technology used:
 HTML, CSS, SCSS
+
+# Future enhancements (to-do list):
+- implement hamburger menu for smaller screens
+- create carousel (slider) with projects
+- look into animation options
