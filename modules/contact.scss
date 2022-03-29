@@ -5,13 +5,12 @@
 
 .contact {
     @include mixins.laptop {
-        // padding-top: 120px;
     }
     @include mixins.section-position;
     margin-bottom: 60px;
 
     &__content-block {
-        @include mixins.flex($just-cont: space-evenly);
+        @include mixins.flex($just-cont: space-between);
 
         @include mixins.phone {
             @include mixins.flex($flx-dir: column, $just-cont: flex-start);
@@ -22,7 +21,8 @@
             color: palette.$color-sand;
 
             @include mixins.phone {
-                font-size: 80px;
+                font-size: 120px;
+                margin: 30px 0 30px 0;
             }
 
             &:hover {

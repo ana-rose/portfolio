@@ -220,7 +220,7 @@
 }
 .contact__content-block {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -240,7 +240,8 @@
 }
 @media only screen and (max-width: 540px) {
   .contact__content-block--img {
-    font-size: 80px;
+    font-size: 120px;
+    margin: 30px 0 30px 0;
   }
 }
 .contact__content-block--img:hover {
