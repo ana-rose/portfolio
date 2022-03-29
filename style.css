@@ -120,7 +120,7 @@
   font-weight: bold;
 }
 .navbar__logo:hover {
-  color: #d9c3b0;
+  color: #904549;
 }
 @media only screen and (max-width: 540px) {
   .navbar {

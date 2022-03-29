@@ -29,7 +29,7 @@
         font-size: 40px;
         font-weight: bold;
         &:hover {
-            color: palette.$color-sand;
+            color: palette.$maroon-light;
         }
     }
     @include mixins.phone {
