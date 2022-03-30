@@ -10,7 +10,7 @@
     margin-bottom: 60px;
 
     &__content-block {
-        @include mixins.flex($just-cont: space-between);
+        @include mixins.flex($just-cont: space-evenly);
 
         @include mixins.phone {
             @include mixins.flex($flx-dir: column, $just-cont: flex-start);
