@@ -48,7 +48,7 @@
 .about-me {
   margin: 100px 30px 30px 30px;
 }
-.about-me__white, .my-projects__white {
+.about-me__white {
   background-color: white;
   border-radius: 0 50px;
   padding: 20px 20px 10px 20px;
@@ -90,6 +90,7 @@
   top: 0;
   left: 0;
   background-color: #f2f2f2;
+  z-index: 10;
 }
 
 .navbar {
@@ -198,6 +199,7 @@
 }
 .my-projects__white {
   padding: 30px;
+  background-color: white;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -212,6 +214,17 @@
     flex-direction: column;
     flex-wrap: nowrap;
   }
+}
+
+.slide {
+  width: 99vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: #904549;
 }
 
 .contact {
@@ -314,7 +327,6 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (min-width: 769px) {
   #partSkills,
-#partProjects,
 #partContact {
     height: 100vh;
     display: flex;

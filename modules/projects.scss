@@ -4,9 +4,6 @@
 @use "./navigation.scss";
 
 .my-projects {
-    @include mixins.laptop {
-        // padding-top: 90px;
-    }
     @include mixins.section-position;
 
     &__text {
@@ -33,11 +30,20 @@
 
     &__white {
         padding: 30px;
-        @extend .about-me__white;
+        background-color: white;
         @include mixins.flex($just-cont: space-evenly);
 
         @include mixins.phone {
             @include mixins.flex($flx-dir: column);
         }
     }
+}
+.slide {
+    width: 99vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: palette.$maroon-light;
 }

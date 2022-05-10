@@ -36,7 +36,6 @@ body::-webkit-scrollbar-thumb {
     }
 }
 #partSkills,
-#partProjects,
 #partContact {
     @include mixins.laptop {
         height: calc(100vh);
